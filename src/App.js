@@ -24,7 +24,19 @@ function App() {
     t = 7 - (t % 7);
     return t + centuryIndices[century];
   };
-  return <h1>Doomsday App</h1>;
+  return (
+    <div>
+      <h1>Doomsday App</h1>
+      <input
+        type="number"
+        name=""
+        id="year"
+        placeholder="Year"
+        min="1800"
+        max="2199"
+      />
+    </div>
+  );
 }
 
 export default App;
